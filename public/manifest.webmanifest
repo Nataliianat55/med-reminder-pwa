@@ -1,0 +1,25 @@
+{
+  "name": "Нагадування про ліки",
+  "short_name": "Ліки",
+  "description": "Офлайн PWA для розкладу прийому ліків (локальне збереження, без реєстрації).",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F2F7",
+  "theme_color": "#F2F2F7",
+  "lang": "uk",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
+
