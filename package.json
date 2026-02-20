@@ -16,8 +16,8 @@
     "lucide-react": "^0.378.0",
     "idb": "^8.0.0",
     "next-pwa": "^5.6.0",
-    "web-push": "^3.6.7"
-    "@ducanh2912/next-pwa": "^10.2.5",
+    "web-push": "^3.6.7",
+   "@ducanh2912/next-pwa": "^10.2.7"
   },
   "devDependencies": {
     "typescript": "^5",
