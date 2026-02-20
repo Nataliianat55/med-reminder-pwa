@@ -74,7 +74,6 @@ export async function showDueNotificationsWhileAppOpen(meds: Medication[]): Prom
     await reg.showNotification(med.name, {
       body: [med.dosage, `Час: ${med.time}`].filter(Boolean).join(" • "),
       tag: key,
-      renotify: false,
       data: { url: "/", medId: med.id }
     });
 
@@ -86,4 +85,5 @@ export async function showDueNotificationsWhileAppOpen(meds: Medication[]): Prom
     localStorage.setItem(lsKey, "1");
   }
 }
+
 
