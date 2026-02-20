@@ -116,7 +116,7 @@ self.addEventListener("sync" as any, (event: any) => {
   event.waitUntil(checkAndNotify());
 });
 
-self.addEventListener("notificationclick", (event: NotificationEvent) => {
+self.addEventListener("notificationclick", (event: ExtendableEvent) => {
   event.notification.close();
   const url = (event.notification.data as any)?.url ?? "/";
   event.waitUntil(
@@ -132,5 +132,6 @@ self.addEventListener("notificationclick", (event: NotificationEvent) => {
     })()
   );
 });
+
 
 
