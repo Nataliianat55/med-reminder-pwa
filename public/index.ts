@@ -87,7 +87,6 @@ async function checkAndNotify(windowMinutes = WINDOW_MINUTES) {
       await reg.showNotification(med.name, {
         body: [med.dosage, `Час: ${med.time}`].filter(Boolean).join(" • "),
         tag: key,
-        renotify: false,
         data: { url: "/", medId: med.id }
       });
       await db.put(FIRED_STORE, { key, firedAt: Date.now() });
@@ -133,4 +132,5 @@ self.addEventListener("notificationclick", (event: NotificationEvent) => {
     })()
   );
 });
+
 
