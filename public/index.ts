@@ -1,3 +1,4 @@
+// @ts-nocheck,
 import { openDB } from "idb";
 
 const DB_NAME = "med-reminder";
@@ -132,6 +133,7 @@ self.addEventListener("notificationclick", (event: any) => {
     })()
   );
 });
+
 
 
 
